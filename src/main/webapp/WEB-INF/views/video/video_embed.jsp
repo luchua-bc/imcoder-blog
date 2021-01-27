@@ -208,7 +208,7 @@
     <input type="hidden" name="video_id" value="<s:eval expression="video.video_id"/>"/>
 </form>
 <div id="player-wrapper">
-    <video id="site-player" class="video-player" crossorigin></video>
+    <video id="site-player" class="video-player" crossorigin playsinline webkit-playsinline></video>
 </div>
 
 <a id="basePath" class="site-path-prefix" href="<%=basePath%>" style="display:none;"></a>
