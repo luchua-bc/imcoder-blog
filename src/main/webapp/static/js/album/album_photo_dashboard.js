@@ -32,7 +32,7 @@
                 if (open) {
                     blowup && blowup.destroy();
                     blowup = $.blowup({
-                        selector: "#masonryContainer img",
+                        selector: "#masonryContainer .photo .image-widget",
                         width: config.width,
                         height: config.height,
                         scale: config.scale
@@ -40,7 +40,7 @@
                     var mfpContent = album_photo_page_handle.pointer.magnificPopup.content;
                     if (mfpContent) {
                         album_photo_page_handle.pointer.blowup = $.blowup({
-                            selector: mfpContent.find('img'),
+                            selector: mfpContent.find('.image-widget'),
                             width: config.width,
                             height: config.height,
                             scale: config.scale
@@ -69,7 +69,7 @@
                     var mfpContent = album_photo_page_handle.pointer.magnificPopup.content;
                     if (mfpContent) {
                         album_photo_page_handle.pointer.blowup = $.blowup({
-                            selector: mfpContent.find('img'),
+                            selector: mfpContent.find('.image-widget'),
                             width: config.width,
                             height: config.height,
                             scale: config.scale

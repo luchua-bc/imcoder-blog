@@ -327,7 +327,7 @@
                 if (open) {
                     blowup && blowup.destroy();
                     blowup = $.blowup({
-                        selector: config.selector.photoNode,
+                        selector: $(config.selector.photoNode).parent(),
                         width: blowupConfig.width,
                         height: blowupConfig.height,
                         scale: blowupConfig.scale
